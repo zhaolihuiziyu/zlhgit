@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Error</title>
+    <meta charset="utf-8" th:remove="all"/>
+
+</head>
+<body>
+<style type="text/css">
+
+</style>
+	<div>
+		<span>Oops!</span><br/>
+		<p>There seems to a problem with the page you requested (<span th:text="${path}"></span>)</p>
+		<p th:text="${'Datails: '+message}"></p>
+	</div>
+
+</body>
+</html>
